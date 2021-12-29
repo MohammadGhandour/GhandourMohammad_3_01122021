@@ -668,7 +668,7 @@ footer a {
             justify-content: center;
   }
   .fonctionnement__elements {
-    width: 300px;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -678,6 +678,27 @@ footer a {
             justify-content: space-between;
     height: 250px;
   }
+  .fonctionnement .element {
+    width: 100%;
+  }
+  .restaurants .restos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .restaurants .resto {
+    width: 48.5%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768PX) {
   .restaurants .restos {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

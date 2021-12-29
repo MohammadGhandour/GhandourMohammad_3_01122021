@@ -594,20 +594,37 @@ main .btn__bg {
     width: 100%;
   }
   main .menus {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .menus .menu {
+    width: 48%;
+    margin: auto;
+  }
+  main .menus .desserts {
+    margin-left: 0px;
+  }
+  main .menus .plats-enchantee {
+    margin-top: 0;
+  }
+  #contenu-footer {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+  main .menus {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   main .menus .menu {
-    width: 95%;
+    width: 100%;
     margin: auto;
-  }
-  #contenu-footer {
-    width: 85%;
   }
 }
 /*# sourceMappingURL=menu.css.map */

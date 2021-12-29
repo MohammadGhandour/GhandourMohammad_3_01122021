@@ -280,12 +280,17 @@ main
         width: 100%;
         .menus
         {
-            flex-direction: column;
-            justify-content: space-between;
+            flex-wrap: wrap;
             .menu
             {
-                width: 95%;
+                width: 48%;
                 margin: auto;
+            }
+            .desserts{
+                margin-left: 0px;
+            }
+            .plats-enchantee{
+                margin-top: 0;
             }
         }
     }
@@ -297,5 +302,17 @@ main
 
 @media screen and (max-width:768px) /*telephone*/
 {
-
+    main
+    {
+        width: 100%;
+        .menus
+        {
+            flex-direction: column;
+            .menu
+            {
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
 }

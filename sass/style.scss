@@ -332,12 +332,34 @@ header
         justify-content: center;
         &__elements
         {
-            width: 300px;
+            width: 100%;
             flex-direction: column;
             justify-content: space-between;
             height: 250px;
         }
+        .element{
+            width: 100%;
+        }
     }
+    .restaurants
+    {
+        .restos
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .resto
+        {
+            width: 48.5%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:768PX) /*TELEPHONE*/
+{
     .restaurants
     {
         .restos
